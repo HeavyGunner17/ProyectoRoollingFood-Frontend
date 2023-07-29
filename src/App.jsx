@@ -5,10 +5,11 @@ import Header from "../src/components/Header";
 import Home from "../src/pages/Home";
 
 import Login from '../src/pages/Login';
-import AdminPanel from '../src/pages/AdminPanel';
-import NotFound from '../src/pages/NotFound';
+//import AdminPanel from '../src/pages/AdminPanel';
+//import NotFound from '../src/pages/NotFound';
 import Products from "./pages/Products";
-import AdminPanelV2 from "./pages/AdminPanelV2";
+import AdminPanel from "./pages/AdminPanel";
+
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -31,12 +32,13 @@ const App = () => {
         <Route path="/login"element={<Login />} />
         {/**<Route path="/admin" element={<AdminPanel />} /> */}
         
-        <Route path="/admin" element={<AdminPanelV2/>} />
+        <Route path="/admin" element={<AdminPanel />} />
+        
         <Route path="/productos" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/Cart" element={<Cart />} />
-        <Route element={<NotFound />} />
+      {/** <Route element={<NotFound />} /> */} 
         {/*  <Route path="/login" element={<LoginScreen />} /> */}
 
         <Route path="*" element={<Navigate replace to="/" />} />

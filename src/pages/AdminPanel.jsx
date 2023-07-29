@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TableProduct from "../components/TableProduct";
 import TableUser from "../components/TableUser";
 
-const AdminPanelV2 = () => {
+const AdminPanel = () => {
   const [activeTab, setActiveTab] = useState("");
 
   const handleTabClick = (tab) => {
@@ -78,4 +78,4 @@ const AdminPanelV2 = () => {
   );
 };
 
-export default AdminPanelV2;
+export default AdminPanel;

@@ -1,5 +1,7 @@
 import React from "react";
 import backgroundImage from "../assets/banner3.jpg";
+import Testimonials from "../components/Testimonials";
+import Stats from "../components/Stats";
 const Home = () => {
   const sectionStyle = {
     background: `url(${backgroundImage})`,
