@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-import { useState } from 'react'
-import About from './pages/About'
-
-=======
 import React, { useContext } from "react";
->>>>>>> origin/router
 
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Header from "../src/components/Header";
@@ -26,11 +20,6 @@ import { CartProvider } from "./context/cartContext";
 const App = () => {
   
   return (
-<<<<<<< HEAD
-<About />
-  )
-}
-=======
     <CartProvider>
     <BrowserRouter>
       <Header />
@@ -49,7 +38,6 @@ const App = () => {
         <Route path="/Cart" element={<Cart />} />
         <Route element={<NotFound />} />
         {/*  <Route path="/login" element={<LoginScreen />} /> */}
->>>>>>> origin/router
 
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
